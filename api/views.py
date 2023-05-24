@@ -34,4 +34,4 @@ def getRoutes(request):
             'description':'Delete an existing note',
         },
     ]
-    return JsonResponse()
+    return JsonResponse(routes, safe=False)
